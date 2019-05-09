@@ -1,3 +1,4 @@
+
 ####**RC Circut building process**
 We used a plan from the internet to begin building our circuit. We decided on the parts list seen below:
 -PT2262 Encoder
@@ -16,3 +17,6 @@ We used a plan from the internet to begin building our circuit. We decided on th
 -battery lead off
 -LED x6
 -misc wires
+
+We initially used this wiring diagram to wire up our transmtter and reciever circuits (transmitter circuit.jpg)
+We had several issues: 
