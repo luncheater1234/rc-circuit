@@ -20,3 +20,5 @@ We used a plan from the internet to begin building our circuit. We decided on th
 
 We initially used this wiring diagram to wire up our transmtter and reciever circuits (transmitter circuit.jpg)
 We had several issues: 
+The Pt2272 and Pt2262 did not function as they should, failing to light up the lightbulbs that showed they had power
+we initall used this wiring diagram; but bought the pt2262 and 2272 ustead 
