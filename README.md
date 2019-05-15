@@ -21,7 +21,7 @@ We used a plan from the internet to begin building our circuit. We decided on th
 
 Our steps:
 Step 1: Build dummy circuit while waiting for parts to arrive:
-While waiting for the arrival of the encoder, decoder, reciever, transmitter and voltage regulator, we wired up the circuits shown in the (reciever circuit)[https://github.com/luncheater1234/rc-circuit/blob/master/reciever%20circuit.png] and (transmitter circuit)[https://github.com/luncheater1234/rc-circuit/blob/master/transmitter%20curcit.png] we used spare integrated curcits from the lab to substitute for the ICs which had not yet arrived. Our dummy transmitter is (here) and our dummy reviever is (here).  
+While waiting for the arrival of the encoder, decoder, reciever, transmitter and voltage regulator, we wired up the circuits shown in the  (reciever circuit) [https://github.com/luncheater1234/rc-circuit/blob/master/reciever%20circuit.png] and  (transmitter circuit) [https://github.com/luncheater1234/rc-circuit/blob/master/transmitter%20curcit.png] we used spare integrated curcits from the lab to substitute for the ICs which had not yet arrived. Our dummy transmitter is (here) and our dummy reviever is (here).  
 
 We initially used this wiring diagram to wire up our transmtter and reciever circuits (transmitter circuit.jp
 We had several issues: 
