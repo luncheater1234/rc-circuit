@@ -34,7 +34,7 @@ Fig 2!!!!
 This is the diagram of how to wire up the pt2262. Note the semi-circular indentation at the top indicating the orientation. Here are the definitions of  the various pins: 
 
 | Pin Name | Explanation |
-----------------------
+| -------- | ------------ |
 | A0-A7 |Extra input/output pins. Not connected to anything in our circuit |
 | Vss | Ground |
 | Vcc | Power in |
