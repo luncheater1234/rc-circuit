@@ -37,8 +37,8 @@ we initally used the wiring diagrams reciever curcit and transmitter circuit. Ho
 Our plan was to use the components listed in the second set of wiring diagrams [reciever circuit 2 and transmitter circuit 2] in the circuit shown in the first set of wiring diagrams.
 Clearly, our plan had some issues from the outset. We had rouble making progress during the first few days
 
-## **Component Explanations**
-The basis of our circuit 
+## **Difficulties**
+The main problems we encountered were with our voltage, buttons, resistors, led’s, breadboard, diodes, and transmitter chip. The first time our circuit did not work we assumed that had applied too high a voltage and were burning out our components. This turned out to be false, as we were using a 9V battery to power parts with power ratings of 5-15V. We continued to test all of our connections to ensure they had the correct amount of voltage until we discovered that the breadboard we were using had a break in connection in the middle of its power strips that was causing only half of our circuit to be powered. Upon moving to a different breadboard we were able to make one led light up using the circuits described above.
 
 
 
