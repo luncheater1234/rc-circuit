@@ -31,16 +31,17 @@ Fig 1!!!!
 2 power supplies will be needed: one for the transmitter circuit and one for the receiver circuit.
 Now, we learn how to make the transmitter circuit
 Fig 2!!!!
-This is the diagram of how to wire up the pt2262. Note the semi-circular indentation at the top indicating the orientation. Here are the definitions of  the various pins:
-|Pin Name|Explanation|
+This is the diagram of how to wire up the pt2262. Note the semi-circular indentation at the top indicating the orientation. Here are the definitions of  the various pins: 
+
+| Pin Name | Explanation |
 ----------------------
-|A0-A7|Extra input/output pins. Not connected to anything in our circuit|
-|Vss|Ground|
-|Vcc|Power in|
-|DOUT|data output to transmitter module|
-|OSC2/OSC1|oscillator output -see more about finding the correct R values below|
-|TE|Goes to ground|
-|D0-3/A11-8|data inputs- we connect to switches|
+| A0-A7 |Extra input/output pins. Not connected to anything in our circuit |
+| Vss | Ground |
+| Vcc | Power in |
+| DOUT | data output to transmitter module |
+| OSC2/OSC1 | oscillator output -see more about finding the correct R values below |
+| TE | Goes to ground |
+| D0-3/A11-8 | data inputs- we connect to switches |
 
 
 ## **Difficulties**
