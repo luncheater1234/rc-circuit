@@ -1,8 +1,8 @@
 # rc-circuit
 
-## **Our Project**
+## **Overview**
 
-### **Final Circuits**
+## **Final Circuits**
 Transmitter Circuit:
 
 ![Screen Shot 2019-05-22 at 6 53 40 PM](https://user-images.githubusercontent.com/50378721/58214256-0ec88500-7cc3-11e9-8515-5040a6dd94ee.png)
