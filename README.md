@@ -3,24 +3,24 @@
 ## **Our Project**
 
 ### ** Final Circuits**
+Transmitter Circuit:
+
+Receiver Circuit:
 
 ### **Components List**
-- PT2262 Encoder: 
-- Pt2272 Decoder: 
-- Transmitter module: 
-- Reciever module: 
-- IC 7805 voltage regulator (x2): 
-- 1N4148 diode x4: 
-- 560 ohm resistors x5: 
-- 240k resistor: 
-- 1.2M resistor: 
-- 10 resistor x4: 
-- 4x alco switch: 
-- 2x C&K switch: 
-- 2x 9v battery: 
-- battery lead off: 
-- LED x6: 
-- misc wires:
+- PT2262 Encoder .35
+- Pt2272-M4 Decoder .38
+- Transmitter module 8.99
+- Reciever module - 
+- IC 7805 voltage regulator (x2)
+- 200k resistor .10
+- 1.2M resistor .10
+- 4x pcb switch ($0.35 ea)
+- 2x 9v battery 1.75
+- battery lead off .70
+- LED x6 .50
+- misc wires 3.00
+Total Cost: $13.83
 
 ## **RC Circut Building Process**
 Our steps:
