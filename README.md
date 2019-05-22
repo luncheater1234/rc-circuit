@@ -36,7 +36,7 @@ Two power supplies will be needed; one for the transmitter circuit and one for t
 
 Our Circuit diagram depicts how to wire the PT2262. Note the semi-circular indentation at the top indicating the orientation. The following are the definitions of the various pins: 
 
-| Pin Name | Explanation |
+| Pin Name | Function |
 | -------- | ------------ |
 | A0-A7 |Input/output pins (not used in our circuit) |
 | Vss | Ground |
@@ -48,87 +48,84 @@ Our Circuit diagram depicts how to wire the PT2262. Note the semi-circular inden
 
 ![PT2262](https://user-images.githubusercontent.com/50378721/58198126-bdf16600-7c9b-11e9-8742-f1fea20dd023.png)
 
-The resistors needed to bridge the OSC2/OSC1 pins in the encoder and decoder can be determined from the following table:
+The resistor values needed to bridge the OSC2/OSC1 pins in the encoder and decoder can be determined from the following table:
 
-| Pt2262 | Pt2272 | Voltage Range |
+| PT2262 | PT2272 | Voltage Range |
 | ----- | ----- | ---- |
 | 4.7MΩ | 820KΩ | 5-15V |
 | 3.3MΩ | 680KΩ | 5-15V |
 | 1.2MΩ | 200KΩ | 3-15V |
 
-Depending on the voltage one plans to run the encoder and decoder at, the oscillator resistance must vary. The oscillator frequency of the pt2272 must be 2.5-8x the encoding pt2262. The magnitude of the frequency of the oscilator has an inverse relationship with the resistance used, so the pt2262 must always have the larger resistor. We used a 1.2MΩ resistor for our pt2262 and a 200KΩ resistor for our pt2272.
+Depending on the voltage one plans to run the encoder and decoder at, the oscillator resistance must vary. The oscillation frequency of the PT2272 must be 2.5 to 8 times that of the encoding PT2262. The magnitude of the frequency of the oscilator has an inverse relationship with the resistance used, so the PT2262 must always have the larger resistor. We used a 1.2MΩ resistor for our PT2262 and a 200KΩ resistor for our PT2272.
 
 Next, wire the transmitter module as shown in the image below:
 
 ![Screen Shot 2019-05-22 at 2 33 27 PM](https://user-images.githubusercontent.com/50378721/58199501-994abd80-7c9e-11e9-9a72-bfe49558a173.png)
 
-| Pin | Function | 
+| Pin Name | Function | 
 | --- | --- |
-| 1 | antena attachment |
-|2 | Data in- comes from DOUT of encoder|
-| 3 | power input- comes from ic 7805 voltage regulator|
-| 4 | ground- goes to battery negative terminal |
+| 1 | ANT: antena attachment |
+|2 | DATA: Data input from DOUT of encoder|
+| 3 | VCC: power input from IC 7805 voltage regulator|
+| 4 | GND: ground, which is connected to the negative battery terminal |
 
 Finally, each component is connected as shown in our transmitter circuit diagram.
 
 ### **Receiver Circuit**
 
-First, build the second power supply, as is discussed above. Then, connect the decoder and receiver modules.
-Setting up the PT2272 decoder: The purpose of the decoder is to take the signals detected by the reveiver and decode them so they can perform functions, in our case to make a lightbulb light up. The following is a pin diagram of the pt2272:
+First, build the second power supply identically to the first. Then, connect the decoder and receiver modules. The purpose of the decoder is to take the signals detected by the receiver and decode them so they can perform functions. Here we are using them to turn on and off LED lights. The following is a pin diagram of the PT2272:
 
 ![Screen Shot 2019-05-22 at 2 46 44 PM](https://user-images.githubusercontent.com/50378721/58200276-70c3c300-7ca0-11e9-8747-6cedb8897f48.png)
 
-The pins of the pt2272 connect as follows: 
+The pins of the PT2272 connect as follows: 
 
-| A0-A7 | outputs (not used) |
+| Pin Name | Function |
 | --- | --- |
+| A0-A7 | Outputs (not used) |
 | VSS | Ground |
-| VCC | 5V power supply|
+| VCC | 5V power supply |
 | VT | Valid Transmission: powered whenever a signal is received |
 | OSC1/OSC2 | Oscillators: connected by resistors, see the resistance values above |
 | DIN | Data in: comes from both outputs of receiver module |
-| A11-A8 | Data out: connected to LED which indicate received signal |
+| A11-A8 | Data out: connected to LED which indicate a signal was received |
 
 The next component to wire is the receiver module:
 
 ![Screen Shot 2019-05-22 at 2 53 09 PM](https://user-images.githubusercontent.com/50378721/58203003-1712c700-7ca7-11e9-923e-7da11abd4b3a.png)
 
-The pins of the receiver module connect as shown:
-| Pin | Function |
+The pins of the receiver module connect as described:
+
+| Pin Name | Function |
 | --- | --- |
-| 1 | ANT: antena |
+| 1 | ANT: antenna |
 | 2 | GND: connect to ground aka negative battery terminal |
-| 3 | VCC: 5V vcc supply- connect to ic 7805 circuit |
-| 4 | CS: indicates signal received, connect to DIN of decoder |
+| 3 | VCC: connect to IC 7805 circuit to power reveiver |
+| 4 | CS: connect to DIN of decoder to indicate when a signal is received |
 | 5 | DATA: connect to DIN of encoder, same place as CS |
 | 6 | GND: connect to negative battery terminal |
-| 7 | ANT: optional other antena |
+| 7 | ANT: optional other antena that does not need to be connected |
 
-Once you have connected the components in the receiver circuit as shown in the circuit diagrams shown above
+To finish connect the components in the receiver circuit as shown in the wiring diagrams above. 
 
-## **Difficulties**
+## **Debugging**
 
-Steps to take if your lightbulbs do not light up when buttons are pressed:
+Steps to take if your lightbulbs do not light up when the buttons are pressed:
 
 - Use a multimeter to check that there is no connection between the ground and the power supply. If there is, something has shorted. You will need to go back and check all of your connections.
 
-- Check with the multimeter that everything is connected how it should: Are your switches and LED lights connected to ground? If you are using a breadboard, is your entire circuit connected to power? Some breadboards have power strips that are disconnected in the middle. 
+- Check with the multimeter that everything is connected how it should be: Are your switches and LED lights connected to ground? If you are using a breadboard, is your entire circuit connected to power? Some breadboards have power strips that are disconnected in the middle. 
 
-- Make sure that the switches are oriented the correct direction. The ground and power wires should be connected with the button's legs pointed towards them, not away. If this is unclear, an easy way to test is to wire up a simple circuit with just a switch, LED, power supply, and ground. You can follow the circuit diagram below:
-
-
-- Ensure your circuit is getting the correct amount of power. The encoder and decoder are rated for between 3 and 15V, depending on what resistance you use in the oscillators. However, the transmitter and receiver modules are only rated until about 5.5V. It is important to supply a voltage that falls inside that range. 
-
-- Wire up a debug circuit which bypasses the transmitter and receiver module. Essentially, wire everything as normal, but leave the transmitter and receiver out, merely connecting the DOUT of the encoder to the DIN of the decoder.
-
-Your debugging circuit should follow this diagram:
+- Make sure that the switches are oriented in the correct direction. The ground and power wires should be connected with the button's legs pointed towards them, not away. If this is unclear, an easy way to test for the correct orientation is to wire up a simple circuit with just a switch, LED, and power supply. You can follow the circuit diagram below:
 
 
 
-- If the circuit still doesn't work, repeat steps 1-4 on debug circuit until it works. 
+- Ensure your circuit is getting the correct amount of power. The encoder and decoder are rated for between 3 and 15V, depending on what resistance you use in the oscillators. However, the transmitter and receiver modules are only rated until about 5.5V. It is important to supply a voltage that falls inside the 3-5.5V range. 
+
+- If you can't find the cause of your troubles, wire up a debugging circuit which bypasses the transmitter and receiver module. Essentially, wire everything as normal, but leave the transmitter and receiver out, merely connecting the DOUT of the encoder to the DIN of the decoder. Below is the wiring diagram we used. 
 
 
-The main problems we encountered were with our voltage, buttons, resistors, led’s, breadboard, diodes, and transmitter chip. The first time our circuit did not work we assumed that had applied too high a voltage and were burning out our components. This turned out to be false, as we were using a 9V battery to power parts with power ratings of 5-15V. We continued to test all of our connections to ensure they had the correct amount of voltage until we discovered that the breadboard we were using had a break in connection in the middle of its power strips that was causing only half of our circuit to be powered. Upon moving to a different breadboard we were able to make one led light up using the circuits described above.
 
+- If the circuit still doesn't work, repeat steps 1-4 in the debugging circuit until it works. 
 
+###**Good Luck!**
 
