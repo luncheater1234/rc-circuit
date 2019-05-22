@@ -10,19 +10,19 @@ Receiver Circuit:
 ![circuit](https://user-images.githubusercontent.com/50378721/58183833-01d57280-7c7e-11e9-836e-00b2b7df7a67.png)
 
 ### **Components List**
-- PT2262 Encoder .35
-- Pt2272-M4 Decoder .38
-- Transmitter module 8.99
-- Reciever module - 
+- PT2262 Encoder
+- Pt2272-M4 Decoder
+- Transmitter module
+- Reciever module
 - IC 7805 voltage regulator (x2)
-- 200k resistor .10
-- 1.2M resistor .10
-- 4x pcb switch ($0.35 ea)
-- 2x 9v battery 1.75
-- battery lead off .70
-- LED x6 .50
-- misc wires 3.00
-Total Cost: $13.83
+- 200k resistor
+- 1.2M resistor
+- 4x pcb switch
+- 2x 9v battery
+- battery lead off
+- LED x6
+- misc wires
+####**Total Cost: $13.83**
 
 ## **RC Circut Building Process**
 Our steps:
