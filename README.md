@@ -4,9 +4,9 @@
 
 ### ** Final Circuits**
 Transmitter Circuit:
-circuit.png
+[circuit](https://user-images.githubusercontent.com/50378721/58183833-01d57280-7c7e-11e9-836e-00b2b7df7a67.png)
 Receiver Circuit:
-circuit.png
+![circuit (1)](https://user-images.githubusercontent.com/50378721/58183872-13b71580-7c7e-11e9-822c-e8fd2cdad8d2.png)
 ### **Components List**
 - PT2262 Encoder .35
 - Pt2272-M4 Decoder .38
