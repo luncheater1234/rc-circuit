@@ -5,11 +5,11 @@
 ### **Final Circuits**
 Transmitter Circuit:
 
-![circuit (1)](https://user-images.githubusercontent.com/50378721/58183872-13b71580-7c7e-11e9-822c-e8fd2cdad8d2.png)
+![Screen Shot 2019-05-22 at 6 53 40 PM](https://user-images.githubusercontent.com/50378721/58214256-0ec88500-7cc3-11e9-8515-5040a6dd94ee.png)
 
 Receiver Circuit:
 
-![circuit](https://user-images.githubusercontent.com/50378721/58183833-01d57280-7c7e-11e9-836e-00b2b7df7a67.png)
+![Screen Shot 2019-05-22 at 6 53 32 PM](https://user-images.githubusercontent.com/50378721/58214214-f22c4d00-7cc2-11e9-843f-4ac5be84f3ff.png)
 
 ### **Components List**
 - PT2262 Encoder
