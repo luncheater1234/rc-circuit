@@ -2,7 +2,7 @@
 
 ## **Our Project**
 
-### ** Final Circuits**
+### **Final Circuits**
 Transmitter Circuit:
 ![circuit (1)](https://user-images.githubusercontent.com/50378721/58183872-13b71580-7c7e-11e9-822c-e8fd2cdad8d2.png)
 
