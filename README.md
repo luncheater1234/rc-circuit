@@ -2,6 +2,10 @@
 
 ## **Overview**
 
+Our goal was to create two circuits which could communicate with one another via radio waves. We initially wanted to use this to remotely control a car. However, we encountered so many problems that we downsized our goal to making a light bulb turn on and off on as dictated by a remote control. We used 4 lightbulbs, each remotely controlled by a switch. When a button is pressed the command is fed into an encoder. The encoder sends coded data to the transmitter module which then sends the command over FM radio waves to the receiver module in the receiver circuit. The receiver module of the receiver circuit feeds the data signal into a decoder, which then selectively powers the corresponding LED. 
+
+![Blank Diagram](https://user-images.githubusercontent.com/50378721/58216160-328fc900-7ccb-11e9-9698-b7f123efc472.jpeg)
+
 ## **Final Circuits**
 Transmitter Circuit:
 
