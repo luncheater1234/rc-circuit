@@ -22,6 +22,7 @@ Receiver Circuit:
 - battery lead off
 - LED x6
 - misc wires
+
 ####**Total Cost: $13.83**
 
 ## **RC Circut Building Process**
