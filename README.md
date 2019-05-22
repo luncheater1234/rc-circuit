@@ -13,40 +13,38 @@ Receiver Circuit:
 
 ### **Components List**
 - PT2262 Encoder
-- Pt2272-M4 Decoder
-- Transmitter module
-- Reciever module
-- IC 7805 voltage regulator (x2)
-- 200k resistor
-- 1.2M resistor
-- 4x pcb switch
-- 2x 9v battery
-- battery lead off
-- LED x6
-- misc wires 
+- PT2272-M4 Decoder
+- STX882 Transmitter Module
+- SRX882 Reciever Module
+- IC 7805 Voltage Regulator (x2)
+- 200kΩ Resistor
+- 1.2MΩ Resistor
+- PCB Switch (x4)
+- 9V Battery (x2)
+- Battery Clip-on Lead Off (x2)
+- LED (x5)
+- Misc Wires 
 #### **Total Cost: $13.83**
 
 ## **RC Circut Building Process**
 ### **Power Supply:**
-For each circuit, we need a power supply. To make the power supply, use an ic 7805 voltage regulator. The voltage regulator takes the 9v from the battery and drops it to 5v, which is a usable voltage for the rf modules, encoder, and decoders. The ic 7805 has three prongs: one for the 9v input power, one ground, and one for the 5v output. These are shown below:
+Two power supplies will be needed; one for the transmitter circuit and one for the receiver circuit. To make the power supplies, use an IC 7805 voltage regulator. The voltage regulator takes 9V from the battery and drops it to 5V, which is a usable voltage for the RF modules, encoder, and decoder. The IC 7805 has three prongs: one for the incomong 9V, one connected to ground, and one for the 5V output. These are shown below:
 
 ![Screen Shot 2019-05-22 at 2 15 11 PM](https://user-images.githubusercontent.com/50378721/58198315-090b7900-7c9c-11e9-8af9-347738e2aa53.png)
 
-Two power supplies will be needed: one for the transmitter circuit and one for the receiver circuit.
-
 ### **Transmitter Circuit**
 
-Our Circuit diagram depicts how to wire the pt2262. Note the semi-circular indentation at the top indicating the orientation. The following are the definitions of the various pins: 
+Our Circuit diagram depicts how to wire the PT2262. Note the semi-circular indentation at the top indicating the orientation. The following are the definitions of the various pins: 
 
-  | Pin Name | Explanation |
-  | -------- | ------------ |
-  | A0-A7 |Extra input/output pins. Not connected to anything in our circuit |
-  | Vss | Ground |
-  | Vcc | Power in |
-   | DOUT | data output to transmitter module |
-  | OSC2/OSC1 | oscillator output -see more about finding the correct R values below |
-  | TE | Goes to ground |
-  | D0-3/A11-8 | data inputs- we connect to switches |
+| Pin Name | Explanation |
+| -------- | ------------ |
+| A0-A7 |Input/output pins (not used in our circuit) |
+| Vss | Ground |
+| Vcc | Power input |
+| DOUT | Data output to transmitter module |
+| OSC2/OSC1 | oscillator output -see more about finding the correct R values below |
+| TE | Goes to ground |
+| D0-3/A11-8 | data inputs- we connect to switches |
 
 ![PT2262](https://user-images.githubusercontent.com/50378721/58198126-bdf16600-7c9b-11e9-8742-f1fea20dd023.png)
 
