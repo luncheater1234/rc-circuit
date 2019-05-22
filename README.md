@@ -27,10 +27,14 @@ Receiver Circuit:
 ## **RC Circut Building Process**
 Power Supply:
 For each circuit, we need a power supply. To make the power supply, use an ic 7805 voltage regulator. The voltage regulator takes the 9v from the battery and drops it to 5v, which is a usable voltage for the rf modules, encoder, and decoders. The ic 7805 has three prongs: one for the 9v input power, one ground, and one for the 5v output. These are shown below:
+
 Fig 1!!!!
+
 2 power supplies will be needed: one for the transmitter circuit and one for the receiver circuit.
 Now, we learn how to make the transmitter circuit
+
 Fig 2!!!!
+
 This is the diagram of how to wire up the pt2262. Note the semi-circular indentation at the top indicating the orientation. Here are the definitions of  the various pins: 
 
 | Pin Name | Explanation |
@@ -42,6 +46,7 @@ This is the diagram of how to wire up the pt2262. Note the semi-circular indenta
 | OSC2/OSC1 | oscillator output -see more about finding the correct R values below |
 | TE | Goes to ground |
 | D0-3/A11-8 | data inputs- we connect to switches |
+
 
 
 ## **Difficulties**
