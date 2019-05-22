@@ -127,5 +127,5 @@ Steps to take if your lightbulbs do not light up when the buttons are pressed:
 
 - If the circuit still doesn't work, repeat steps 1-4 in the debugging circuit until it works. 
 
-###**Good Luck!**
+### **Good Luck!**
 
