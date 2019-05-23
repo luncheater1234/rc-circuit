@@ -1,4 +1,4 @@
-# rc-circuit
+# **RC Circuit**
 
 ## **Overview**
 
