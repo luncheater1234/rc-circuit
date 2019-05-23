@@ -46,9 +46,9 @@ Our Circuit diagram depicts how to wire the PT2262. Note the semi-circular inden
 | Vss | Ground |
 | Vcc | Power input |
 | DOUT | Data output to transmitter module |
-| OSC2/OSC1 | oscillator output -see more about finding the correct R values below |
+| OSC2/OSC1 | Oscillator output -see more about finding the correct R values below |
 | TE | Goes to ground |
-| D0-3/A11-8 | data inputs- we connect to switches |
+| D0-3/A11-8 | Data inputs- we connect to switches |
 
 ![PT2262](https://user-images.githubusercontent.com/50378721/58198126-bdf16600-7c9b-11e9-8742-f1fea20dd023.png)
 
