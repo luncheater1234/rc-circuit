@@ -121,15 +121,34 @@ Steps to take if your lightbulbs do not light up when the buttons are pressed:
 
 - Make sure that the switches are oriented in the correct direction. The ground and power wires should be connected with the button's legs pointed towards them, not away. If this is unclear, an easy way to test for the correct orientation is to wire up a simple circuit with just a switch, LED, and power supply. You can follow the circuit diagram below:
 
-
-
 - Ensure your circuit is getting the correct amount of power. The encoder and decoder are rated for between 3 and 15V, depending on what resistance you use in the oscillators. However, the transmitter and receiver modules are only rated until about 5.5V. It is important to supply a voltage that falls inside the 3-5.5V range. 
 
 - If you can't find the cause of your troubles, wire up a debugging circuit which bypasses the transmitter and receiver module. Essentially, wire everything as normal, but leave the transmitter and receiver out, merely connecting the DOUT of the encoder to the DIN of the decoder. Below is the wiring diagram we used. 
 
-
+![Screen Shot 2019-05-24 at 11 28 42 AM](https://user-images.githubusercontent.com/50378721/58339263-303a8580-7e17-11e9-9575-888cf14c216b.png)
 
 - If the circuit still doesn't work, repeat steps 1-4 in the debugging circuit until it works. 
 
-### **Good Luck!**
+## **Sources**
 
+https://www.youtube.com/watch?v=e5kIaub7Xio
+
+This was one of the first sources we looked at. It gives good starting info but we had to build off of it in order to make the circuit work.
+
+https://electronics.howstuffworks.com/radio.htm
+
+This source gives a good overview of how radio waves are used in everyday life. It gives examples for toys and other uses and is a good read for general background information.
+
+https://www.youtube.com/watch?v=x7NgYuND34s
+
+This is another good video to watch. Since we were originally trying to make an RC car we based a solid amount of our circuitry off of this video. They have a link to their circuit diagrams in the description. These circuits are the closest we've found to our final circuits. In the transmitter they use the diode and resister combo in conjunciton with the button. Noteably, we were never able to figure out why exactly the resistor and diode make the button's signal stronger. That would be a good question to answer in the future!
+
+https://maker.pro/pcb/projects/remote-control-car
+
+This source inspired the debugging circuit we used! It has a good list of debugging procedures that are likely going to be super helpful for any future projects. One thing to note is that instead of using PT2262/PT2272's they use HT12E/HT12D's. Upon thurough investigation, you can connect the pins exactly how they show as the two chips are nearly identical. 
+
+http://tok.hakynda.com/article/detail/190/pt2262---pt2272-l4---433-mhz-rf-wireless-receiver-and-transmitter
+
+Don't get stuck here like we did! If you look in the comments in the youtube video viewers have commented that the circuit does not work. We spent quite a bit of time trying to make it work ourselves but were ultimately unsucessful. You will also see that the led's in the circuit diagram are mistakenly not all connected to ground. 
+
+### **Good Luck!**
